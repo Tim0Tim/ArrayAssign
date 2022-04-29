@@ -17,22 +17,31 @@ namespace Arrays
             Random r5 = new Random();
             int r5Int = r5.Next(10 ,100);
 
-            if (r1 == r2)
+            while (r1Int == r2Int || r1Int == r3Int || r1Int == r4Int || r1Int == r5Int
+                || r2Int == r3Int || r2Int == r4Int || r2Int == r5Int
+                || r3Int == r4Int || r3Int == r5Int
+                || r4Int == r5Int)
             {
-                r2 = new Random();
+                //finish the chages to the just in case situation
+                if (r1Int == r2Int)
+                {
+                    r2 = new Random();
+                }
+                if (r3Int == r1Int || r3Int == r2Int)
+                {
+                    r3 = new Random();
+                }
+                if (r4 == r1 || r4 == r2 || r4 == r3)
+                {
+                    r4 = new Random();
+                }
+                if (r5 == r1 || r5 == r2 || r5 == r3 || r5 == r4)
+                {
+                    r5 = new Random();
+                }
             }
-            if (r3 == r1 || r3 == r2)
-            {
-                r3 = new Random();
-            }
-            if (r4 == r1 || r4 == r2 || r4 == r3)
-            {
-                r4 = new Random();
-            }
-            if (r5 == r1 || r5 == r2 || r5 == r3 || r5 == r4)
-            {
-                r5 = new Random();
-            }
+
+            Console.WriteLine($"{r1Int}, {r2Int}, {r3Int}, {r4Int}, {r5Int}");
         }
     }
 }
