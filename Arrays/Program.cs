@@ -7,15 +7,15 @@ namespace Arrays
         static void Main()
         {
             //Random r1 = new Random();
-            //int r1Int = r1.Next(10 ,100);
+            //int r1Int = r1.Next(10, 100);
             //Random r2 = new Random();
-            //int r2Int = r2.Next(10 ,100);
+            //int r2Int = r2.Next(10, 100);
             //Random r3 = new Random();
-            //int r3Int = r3.Next(10 ,100);
+            //int r3Int = r3.Next(10, 100);
             //Random r4 = new Random();
-            //int r4Int = r4.Next(10 ,100);
+            //int r4Int = r4.Next(10, 100);
             //Random r5 = new Random();
-            //int r5Int = r5.Next(10 ,100);
+            //int r5Int = r5.Next(10, 100);
 
             int r1Int = Convert.ToInt32(Console.ReadLine());
             int r2Int = Convert.ToInt32(Console.ReadLine());
